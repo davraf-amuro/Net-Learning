@@ -14,3 +14,4 @@ Essendo un'api per giocare non segue architetture specifiche come DDD e Microser
 # Ringraziamenti e Fonti
 + [Marco Minerva](https://github.com/marcominerva)
 + [Nick Chapsas](https://www.youtube.com/@nickchapsas)
++ [Microsoft Learning])(https://learn.microsoft.com/it-it/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-9.0#recommended-learning-path)
