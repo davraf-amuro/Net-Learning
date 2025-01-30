@@ -11,8 +11,7 @@ namespace MinimalApi.Endpoints
         public static IEndpointRouteBuilder MapProducts(this IEndpointRouteBuilder builder)
         {
             var group = builder.MapGroup("api/products")
-                .WithName("Products")
-                .WithOpenApi();
+                .WithTags("Products");
 
             group.MapGet("{id:guid}", async Task<IResult> (Guid id, ProductsService service) =>
             {

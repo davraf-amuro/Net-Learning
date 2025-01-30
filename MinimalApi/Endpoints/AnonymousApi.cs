@@ -1,13 +1,11 @@
 ﻿namespace MinimalApi.Endpoints
 {
-    public static partial class NotAuthenticated
+    public static partial class AnonymousApi
     {
-        public static IEndpointRouteBuilder MapNotAuthenticated(this IEndpointRouteBuilder endpoints)
+        public static IEndpointRouteBuilder MapAnonymousApi(this IEndpointRouteBuilder endpoints)
         {
             var group = endpoints.MapGroup("api/anonymous")
-                .WithOpenApi()
-                .WithName("Anonymous")
-                .WithDescription("free to use api");
+                .WithTags("Anonymous");
 
             group.MapGet("hello", (string name, IConfiguration configuration) =>{
                 
@@ -24,7 +22,7 @@
             });
 
 
-            return endpoints;
+            return group;
         }
     }
 }

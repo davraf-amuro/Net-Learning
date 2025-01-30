@@ -1,5 +1,6 @@
 using MinimalApi.Endpoints;
 using MinimalApi.Services;
+using MinimalApi.Transformers;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<ProductsService>();
 
 //using microsoft OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddOpenApi(options =>
+{
+    options.AddDocumentTransformer<DocumentInfo>(); // la classe che imposta informazioni come titolo, autore, ecc
+});
 
 var app = builder.Build();
 
@@ -29,7 +33,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 //load my endpoints
-app.MapNotAuthenticated();
+app.MapAnonymousApi();
 app.MapProducts();
 
 app.Run();
