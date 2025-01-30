@@ -1,5 +1,5 @@
 # Net9-Learning
-Ho voluto creare questa soluzione per imparare, approfondire, migliorare le mie conoscenze su alcune tematichein ambito net.core partendo dall'uso delle minimal api in piena sostituzione dei controller MVC.
+Ho voluto creare questa soluzione per imparare, approfondire, migliorare le mie conoscenze su alcune tematiche in ambito net.core partendo dall'uso delle minimal api in piena sostituzione dei controller MVC.
 + perchè passare alle minimal api, approfondimento di [Marco Minerva](https://github.com/marcominerva): [Minimal API: The road so far](https://youtu.be/VKhqdZ-j7W0?si=Q4BDyVWsCDhv7Ekd)
 Essendo un'api per giocare non segue architetture specifiche come DDD e Microservice o la Clean Architecture ma ho cercado comunque di dare un ordine funzionale al codice
 ## Minimal Api
