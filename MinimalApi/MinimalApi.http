@@ -1,0 +1,22 @@
+@MinimalApi_HostAddress = https://localhost:7128
+
+GET {{MinimalApi_HostAddress}}/api/anonymous/hello?name=raffa
+Accept: application/json
+
+###
+
+GET {{MinimalApi_HostAddress}}/api/products/CC4D7472-67B5-430D-9DA7-E0FAF4A87A32
+
+###
+
+GET {{MinimalApi_HostAddress}}/api/products/advancesearch?name=exampleName&description=exampleDescription
+
+###
+
+GET {{MinimalApi_HostAddress}}/api/products/advancesearch?name=gundam
+
+###
+
+GET {{MinimalApi_HostAddress}}/api/products/parameters?na=gundam
+
+###
